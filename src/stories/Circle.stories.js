@@ -5,7 +5,7 @@ export default {
     component: Content,
     borderTopColor: { control: 'color' },
 };
-
+//Loading
 const Template = (args) => <Content {...args} />;
 
 export const Primary = Template.bind({});
