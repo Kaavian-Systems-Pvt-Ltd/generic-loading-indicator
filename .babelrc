@@ -1,0 +1,9 @@
+{
+    "presets": [
+      // Latest javascript
+      "@babel/preset-env",
+  
+      // React
+      "@babel/preset-react"
+    ]
+  }

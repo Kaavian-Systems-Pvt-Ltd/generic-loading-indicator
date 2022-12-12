@@ -1,0 +1,43 @@
+.loading{
+    display: flex;
+    justify-content: center;
+}
+
+.loading::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid #dddddd;
+    border-top-color: #747677e1;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+@keyframes loading{
+    /* to{
+        transform: rotate(1turn);
+    } */
+    0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+}
+.loading{
+    z-index:-1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-Color: rgba(0, 0, 0, 0.5);
+    /* background-Color:transparent; */
+}
+.loading--small {
+    padding: 10px 16px;
+  }
+.loading--medium {
+    padding: 11px 20px;
+  }
+.loading--large {
+    padding: 12px 24px;
+  }
