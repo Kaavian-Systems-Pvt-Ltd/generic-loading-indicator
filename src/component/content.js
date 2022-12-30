@@ -6,7 +6,6 @@ import './loading.css';
 export const Content = ({ primary, size,borderTopColor,...props }) => {
     const mode = primary ? 'loading--primary' : 'loading--secondary';
     const [post,setPost]=useState(null)
-
     // useEffect(() => {
     //     fetch('https://jsonplaceholder.typicode.com/posts/1')
     //     .then(res=>res.json())
@@ -18,7 +17,6 @@ export const Content = ({ primary, size,borderTopColor,...props }) => {
     // },[])
     return (
         <div>
-            {/* <h1 align = "center">loading indicator</h1> */}
             {post?post:<loading type='loading'
             className={['loading', `loading--${size}`, mode].join(' ')}
             style={borderTopColor && {borderTopColor}}
