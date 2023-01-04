@@ -20,7 +20,7 @@
       100% { transform: rotate(360deg); }
 }
 .loading{
-    z-index:99999;
+    z-index:-2;
     position: relative;
     overflow: auto;
     display: flex;
