@@ -1,7 +1,7 @@
-.loading{
+/* .loading{
     display: flex;
     justify-content: center;
-}
+} */
 
 .loading::after{
     content: "";
